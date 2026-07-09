@@ -7,7 +7,7 @@ import * as z from "zod";
 import { tool } from "@langchain/core/tools";
 import { createAgent } from "langchain";
 
-
+// yaha tool ko as a object saari details provide krni pdti h
 const emailTool = tool(
     sendEmail,
     {
