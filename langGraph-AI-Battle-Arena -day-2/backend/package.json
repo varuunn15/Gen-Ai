@@ -1,0 +1,32 @@
+{
+  "name": "langgraph-ai-battle-arena",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit1",
+    "dev": "tsx server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@langchain/cohere": "^1.1.0",
+    "@langchain/core": "^1.2.3",
+    "@langchain/google": "^0.2.1",
+    "@langchain/langgraph": "^1.4.8",
+    "@langchain/mistralai": "^1.2.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "langchain": "^1.5.3",
+    "zod": "^4.4.3"
+  }
+}

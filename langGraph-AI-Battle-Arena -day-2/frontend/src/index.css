@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Custom utility styles and animations */
+:root {
+  color-scheme: dark light;
+}
+
+/* Custom Scrollbars */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(20, 184, 166, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.5), 0 10px 15px -3px rgba(20, 184, 166, 0.1);
+  }
+}
+
+.winner-card-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
